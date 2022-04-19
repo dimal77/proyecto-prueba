@@ -1,0 +1,163 @@
+*{
+  margin: 0%;
+  border: 0%;
+}
+
+.contenedor{
+  display: grid;
+  grid-template-areas:
+  "cabecera"
+  "cuerpo"
+  "pie";
+}
+
+.header_area{
+  grid-area: "cabecera";
+}
+
+.main_area{
+  grid-area: "cuerpo";
+}
+
+.footer_area{
+  grid-area: "pie";
+}
+
+.header_grid img{
+  width:4rem;
+}
+
+.header_grid {
+  background-color: #DAB88B;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  /* display: flex;
+  justify-content:space-between; */
+}
+
+.header_nav {
+  display: flex;
+  flex-wrap:wrap;
+  list-style: none;
+  justify-content: right;
+}
+
+.header_nav li{
+  margin-right: 2rem;
+}
+
+.texto_logo{
+  display: flex;
+}
+
+.texto_logo  div{
+  margin-top: 0.5rem;
+}
+
+.main_grid{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_grid h1{
+  position: absolute;
+  font-size: 3rem;
+}
+
+.main_mark{
+  background-color: #8BADDA;
+  color: #ffff;
+}
+.footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  padding-top: 1rem;
+  background-color: #DAB88B;
+}
+.ul_footer{
+  display: flex;
+}
+
+.footer h2{
+ margin-left: 7.5rem;
+}
+.ul_footer li{
+  display: inline-block;
+  margin-top: 1.5rem;
+}
+
+.ul_footer li a{
+  padding: 0 10px;
+  font-size: 3rem;
+  color: bisque;
+}
+
+.img-foto{
+  width: 18rem;
+  height: 14rem;
+}
+
+.main-mudanzas{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+.main-organizacion{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+.main_grid_galeria{
+  background-color: #8BADDA;
+}
+
+.main_grid_galeria h2{
+  padding: 1.5rem;
+
+}
+
+@media (max-width:768px) {
+  .header_grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .header_nav {
+    padding: 0;
+    justify-content:center;
+  }
+  .header_nav li{
+    margin-right:0.5rem;
+  }
+  .footer{
+    grid-template-columns: 1fr;
+    padding-top: 1rem;
+  }
+  .footer h2{
+    margin-left: 3.5rem;
+  }
+  .ul_footer li a{
+  padding: 1rem;
+  padding-left: 0rem;
+  font-size: 3rem;
+  color: bisque;
+  }
+  .ul_footer {
+    padding: 0rem;
+  }
+  .main-mudanzas{
+  grid-template-columns: 1fr;
+  }
+
+  .main-organizacion{
+    grid-template-columns: 1fr;
+  }
+
+  .main_grid_galeria h2{
+    padding: 0.2rem;
+  }
+}
