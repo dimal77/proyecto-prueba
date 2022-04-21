@@ -3,13 +3,15 @@
   border: 0%;
 }
 
-.contenedor-galeria{
+.contenedor_galeria{
   display: grid;
   grid-template-areas:
   "cabecera"
   "cuerpo"
   "pie";
+
 }
+
 
 .header_area{
   grid-area: "cabecera";
@@ -96,6 +98,7 @@
 
 .main_mark{
   background-color: #8BADDA;
+  
   color: #ffff;
 }
 .footer{
@@ -123,6 +126,13 @@
   color: bisque;
 }
 
+.main_grid{
+  background-color: #DAB88B;
+}
+.main_grid img{
+  border-radius: 4rem;
+}
+
 
 .img-foto{
   width: 18rem;
@@ -142,12 +152,21 @@
   justify-items: center;
 }
 .main_grid_galeria{
-  background-color: #8BADDA;
+  background: rgb(75,115,149);
+  background: linear-gradient(307deg, rgba(75,115,149,1) 0%, rgba(183,202,219,1) 100%);
 }
 
 .main_grid_galeria h2{
   padding: 1.5rem;
 
+}
+.quienes__imagen img{
+  width: 100%;
+  height: auto;
+}
+
+.text-editor{
+  padding: 2rem;
 }
 
 
