@@ -3,7 +3,7 @@
   border: 0%;
 }
 
-.contenedor{
+.contenedor-galeria{
   display: grid;
   grid-template-areas:
   "cabecera"
@@ -17,6 +17,7 @@
 
 .main_area{
   grid-area: "cuerpo";
+  min-height: 2rem;
 }
 
 .footer_area{
@@ -40,11 +41,37 @@
   display: flex;
   flex-wrap:wrap;
   list-style: none;
-  justify-content: right;
+  justify-content: space-around;
 }
 
 .header_nav li{
-  margin-right: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+
+
+.header_nav a{
+  border:1px;
+  border-style: groove;
+  padding: 0.2rem;
+  display: inline-block;
+  padding: 6px;
+  text-align: center;
+  border-radius: 5rem;
+  background-image: linear-gradient(#4B7395, #9accf7);
+  color:#FFFFFF;
+  text-decoration:none;
+  box-shadow: 1px 3px 7px gray;
+  transition: all 1s;
+
+}
+
+.header_nav a:hover{
+  transform:scale(1.5);
+  background: #DAB88B;
 }
 
 .texto_logo{
@@ -96,9 +123,11 @@
   color: bisque;
 }
 
+
 .img-foto{
   width: 18rem;
   height: 14rem;
+  border-radius: 1rem;
 }
 
 .main-mudanzas{
@@ -120,6 +149,7 @@
   padding: 1.5rem;
 
 }
+
 
 @media (max-width:768px) {
   .header_grid {
